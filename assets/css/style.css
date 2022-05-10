@@ -1,0 +1,677 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+    background-color: #fff;
+    color: #353535;
+}
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.container{
+    width:992px;
+    display:flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    font-size: .9rem;
+}
+nav ul,
+nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    display: flex;
+}
+nav a{
+    display: block;
+    padding:15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #353535;
+}
+nav .active a{
+    background-color: #42b3e5;
+    color: #fff;
+}
+nav a:hover{
+    background-color:#42b3e5;
+    color: #fff;
+    transition: all 0.5s linear;
+}
+#banner{
+    display:flex;
+    justify-content:center;
+    background-image: url(../images/img1.jpg);
+    background-size: cover;
+    height: 670px;
+}
+.miniBanners .teste{
+    height:220px;
+    display: flex;
+}
+.title{
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+}
+section .column{
+    display: flex;
+    flex-direction: column;
+}
+.container h1,
+.container h2{
+    padding: 0px;
+    margin: 0px;
+}
+.title h1{
+    color: #fff;
+    font-size:4.5rem;
+    width:480px;
+    text-shadow: 0px 2px 1px #353535;
+    margin-bottom: 30px;
+}
+.title h2{
+    color:#fff;
+    font-size:1.2rem;
+    width:300px;
+    text-shadow: 0px 1px 1px #353535;
+}
+.miniBanners .area_1,
+.miniBanners .area_2,
+.miniBanners .area_3{
+    flex: 1;
+    padding:20px;
+    color:#fff;
+}
+.miniBanners .titleLink{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.description{
+    font-size: .9rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.miniBanners .area_1{
+    background-color: #42b3e5;
+}
+.miniBanners .area_2{
+    background-color: #0384ce;
+}
+.miniBanners .area_3{
+    background-color: #3156a3;
+}
+.btnReadmore{
+    color: #fff;
+    font-size: .8rem;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding:4px;
+}
+.btnReadmore:hover{
+    background-color: #3f63ae;
+    border: 1px solid #3f63ae;
+    transition:all .2s linear;
+}
+.hoursInfo1,
+.hoursInfo2,
+.hoursInfo3{
+    display:flex;
+    justify-content:space-between;
+    padding:15px;
+    height:41px;
+    border-bottom: solid 1px #3f63ae;
+}
+.areaArticles{
+    display:flex;
+    justify-content: center;
+}
+section .sideNotices{
+    flex:2;
+}
+section .sideDepartments{
+    flex:1;
+}
+section .titleArea{
+    margin-top:30px;
+}
+section .titleDescription{
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Arial';
+}
+section .titleBar{
+    width:50px;
+    height:3px;
+    background-color:#42b3e5;
+    margin-bottom:30px;
+}
+section .dateInfo{
+    display:flex;
+}
+section .date{
+    background-color: #3156a3;
+    padding:8px;
+    margin-right: 3px;
+    color: #fff;
+}
+section .comments{
+    background-color: #42b3e5;
+    padding: 8px;
+    color: #fff;
+}
+.sideNotices .imageDoutor{
+    width:100%;
+    height:auto;
+    margin: 20px 0px;
+}
+.nameNotice{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+.textArea{
+    font-size: .9rem;
+    color: #5c5c5c;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+section a{
+    text-decoration: none;
+}
+.showAll{
+    background-color: #42b3e5;
+    padding: 8px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    height: 30px;
+}
+.noticeContainer{
+    display: flex;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+article{
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+.sideDepartments{
+    padding-left: 10px;
+}
+.areaDepartments{
+    display: flex;
+    flex-wrap: wrap;
+}
+.departments{
+    flex: 1;
+    min-width: 150px;
+    min-height: 150px;
+    margin-bottom: 30px;
+    background-color: #42b3e5;
+}
+.margin{
+    margin-right:27px;
+}
+.descriptionAppointments{
+    color: #5c5c5c;
+}
+.textAppointments{
+    margin-bottom: 15px;
+}
+.phone{
+    border-top: 1px solid rgb(241, 238, 238);
+    margin-top:20px;
+}
+.phone,
+.email,
+.page{
+    border-bottom: 1px solid rgb(241, 238, 238);
+    padding:20px;
+}
+#rodape{
+    display:flex;
+    justify-content: center;
+    background-color: #1e1e1e;
+}
+.areaInfos{
+    display: flex;
+    flex:1;
+    color: #fff;
+}
+.rodapeInfos1,
+.rodapeInfos2,
+.rodapeInfos3{
+    padding: 20px;
+    flex: 1;
+}
+.rodapeInfos1{
+    background-color: #42b3e5;
+}
+.rodapeInfos2{
+    background-color: #0384ce;
+}
+.rodapeInfos3{
+    background-color: #3156a3;
+}
+.dadosFooter{
+    background-color: #1e1e1e;
+}
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-top:70px;
+}
+footer .dadosFooter{
+    display: flex;
+    flex:1;
+    color: #fff;
+}
+footer .textsFooter{
+    flex:1;
+    padding-top: 20px;
+}
+.first{
+    
+}
+footer .container h1{
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+footer h2{
+    font-size: .9rem;
+    font-weight: normal;
+}
+footer a{
+    text-decoration: none;
+}
+footer .titleBar{
+    width:50px;
+    height:3px;
+    background-color:#42b3e5;
+    margin-top:15px;
+}
+footer .text, .address1, .address2{
+    font-size:.9rem;
+    color:#8b8b8b;
+    margin-bottom:30px;
+    margin-top: 30px;
+}
+footer .address1, .address2 p{
+    line-height:10px;
+}
+.fakeText{
+    color:#1e1e1e;
+}
+#divAddres{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-top: 0px;
+}
+.address1{
+    width:100%;
+    font-size:.8rem;
+    padding: 0;
+    margin: 0px;
+}
+.address2{
+    width: 200px;
+    font-size:.8rem;
+    padding: 0;
+    margin: 0px;
+}
+.socialMedias{
+    display: flex;
+}
+.dadosFooter img{
+    width:30px;
+    height:30px;
+    margin: 20px 0px;
+}
+.geralPost{
+    font-size: .9rem;
+    color: #fff;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+.postsArea,
+.twitteArea{
+    padding-left: 20px;
+}
+.datePost,
+.datett{
+    color:#42b3e5;
+    font-size: .7rem;
+}
+.geraltt{
+    font-size: .9rem;
+    color: #8b8b8b;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+.geraltt a{
+    color:#fff;
+}
+.copyright{
+    color: #8b8b8b;
+    font-size: .7rem;
+}
+.copyright a{
+    color: #fff;
+    font-size: .7rem;
+}
+.direitos{
+    margin-top: 30px;
+    border-top: 1px solid #5c5c5c;
+    height:40px;
+    line-height:40px;
+}
+.menuMobile{
+    display:none;
+    width:40px;
+    height:40px;
+    margin-right: 20px;
+}
+.menuBtn{
+    width:40px;
+    height:2px;
+    background-color: #42b3e5;
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+@media(max-width:1025px){
+    nav li a{
+        padding:10px;
+        font-size:12px;
+    }
+}
+/* @media(max-width:998px){
+    .container{
+        padding: 0 10px !important;
+    }
+} */
+@media(max-width:991px){
+    .areaDepartments{
+        flex-direction:column;
+    }
+    .margin{
+        margin: 0px;
+    }
+    .noticesFullArea{
+        flex-direction:column;
+    }
+}
+@media (max-width: 912px){
+    .description{
+        font-size: .8rem;
+    }
+    .hoursInfo1,
+    .hoursInfo2,
+    .hoursInfo3{
+        font-size: .8rem;
+    }
+}
+@media(max-width:871px){
+    nav li a{
+        padding:10px;
+        font-size:12px;
+    }
+}
+
+@media(max-width:769px){
+    #banner{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    header{
+        height:auto;
+    }
+    .title h1{
+        font-size:6rem;
+    }
+    .title h2{
+        font-size:1.5rem;
+        width:350px;
+    }
+    .title{
+        padding:20px;
+    }
+    nav ul{
+        flex-direction: column;
+        display:none;
+        position: absolute;
+        left: 0px;
+        padding-top: 25px;
+        background-color: #fff;
+        width: 100%;
+        align-items: center;
+    }
+    nav li{
+        width: 100%;
+        text-align: center;
+    }
+    nav li a{
+        color: #5c5c5c;
+    }
+    .logo{
+        padding:20px;
+    }
+    .margin{
+        margin: 0px;
+    }
+    section .sideNotices{
+        padding:20px;
+    }
+    section .sideDepartments{
+        padding:20px;
+    }
+    .departments{
+        min-width: 230px;
+    }
+    footer .dadosFooter{
+        flex-direction: column;
+        padding:20px;
+    }
+    .rodapeBorder{
+        border-bottom: 1px solid #5c5c5c;
+        margin-top: 10px;  
+    }
+    .marginBottom{
+        margin-bottom: 10px;
+        padding-bottom: 28px;
+    }
+    .socialMedias{
+        justify-content:center;
+    }
+    .direitos{
+        display: flex;
+        justify-content:center;
+    }
+    .contactArea{
+        font-size: 13px;
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    nav .active a{
+        background-color: transparent;
+        color: #5c5c5c;
+    }
+    nav a:hover{
+        background-color:#42b3e5;
+        width:100%;
+    }
+    .miniBanners .teste{
+        flex-direction: column;
+    }
+    .areaArticles{
+        margin-top: 475px !important;
+    }
+}
+@media(max-width:657px){
+    .title h1 {
+        font-size: 4rem;
+    }
+    .areaArticles{
+        margin-top: 340px !important;
+    }
+}
+@media(max-width:631px){
+    .container{
+        flex-direction: column;
+    }
+    header .container{
+        flex-direction: row;
+    }
+}
+@media(max-width:525px){
+    .title h1{
+        font-size:60px;
+        width:300px;
+    }
+    .title h2{
+        font-size:20px;
+    }
+    .areaInfos{
+        flex-direction: column;
+    }
+}
+@media(max-width:426px){
+    .sideNotices{
+        margin-top: 50px;
+    }
+}
+@media(max-width:390px){
+    .title h1{
+        font-size:40px;
+        width:250px;
+    }
+    .title h2{
+        font-size:20px;
+        width:250px;
+    }
+    .sideNotices{
+        margin-top:50px;
+    }
+}
+@media(max-width:377px){
+    .areaNotices{
+        margin-top:40px;
+    }
+}
+/*@media(max-width:426px){
+    #banner{
+        background-image: url(../images/img1.jpg);
+        background-position: center;
+    }
+    .description{
+        padding:0px;
+        margin:0px;
+    }
+    .title{
+        width:340px;
+       
+    }
+    .title h1{
+        font-size:50px;
+        padding-left:30px;
+        width: 280px;
+    }
+    .title h2{
+        font-size:30px;
+        margin-left: 30px;
+    }
+    .areaDepartments{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+        padding-top: 40px;
+        
+    }
+    header .container{
+        flex-direction: row;
+        padding-top:0;
+    }
+    .areaArticles{
+        margin-top: 300px;
+    }
+    .miniBanners .teste{
+        flex-direction: column;
+    }
+    .teste .description{
+        font-size:12px;
+        margin: 0;
+        padding: 0;
+    }
+    .teste a{
+        margin-top:20px;
+    }
+    .miniBanners .area_1,
+    .miniBanners .area_2,
+    .miniBanners .area_3{
+        flex: 1;
+        color:#fff;
+        font-size: 12px;
+        margin-left: 20px; 
+        padding: 10px;
+    }
+
+    .flexColumn{
+     padding-top:0px;
+ }
+    .description{  
+        width:400px;
+        padding:10px;
+        margin-bottom: 20px;
+    }
+    .hoursInfo1, .hoursInfo2, .hoursInfo3{
+        width:400px;
+    }
+}
+@media(max-width:521px){
+    .areaDepartments{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+    }
+    header .container{
+        flex-direction: row;
+        padding-top:0;
+    }
+}*/

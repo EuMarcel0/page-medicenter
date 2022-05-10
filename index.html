@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pb_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0">
+    <title>MediCenter - Site com Flexbox</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        window.onload = function() {
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if (document.querySelector(".menu nav ul").style.display == 'flex'){
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="assets/images/logo.png"></a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <div class="menuMobile">
+                        <div class="menuBtn"></div>
+                        <div class="menuBtn"></div>
+                        <div class="menuBtn"></div>
+                    </div>
+                    <ul>
+                        <li class="active"><a href="#">HOME</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">PAGES</a></li>
+                        <li><a href="#">DEPARTMENTS</a></li>
+                        <li><a href="#">TIMETABLE</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="banner">
+        <div class="container column">
+            <div class="title">
+                <h1>Top notch experience</h1>
+                <h2>Medicenter is a responsive template perfect for all screen sizes.</h2>
+            </div>
+            <div class="miniBanners">
+                <div class="teste">
+                    <div class="area_1">
+                    <div class="titleLink">Emergency Case</div>
+                    <div class="description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div>
+                    <a href="#" class="btnReadmore">Read more →</a>
+                </div>
+                <div class="area_2">
+                    <div class="titleLink">Doctors Timetable</div>
+                    <div class="description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div>
+                    <a href="#" class="btnReadmore">Read more →</a>
+                </div>
+                <div class="area_3">
+                    <div class="titleLink">Opening Hours</div>
+                    <div class="hoursInfo1">
+                    <div class="dayName">Monday - Friday</div>
+                    <div class="hours">8:00 - 17:00</div>
+                </div>
+                <div class="hoursInfo2">
+                    <div class="dayName">Saturday</div>
+                    <div class="hours">9:30 - 17:30</div>
+                </div>
+                <div class="hoursInfo3">
+                    <div class="dayName">Sunday</div>
+                    <div class="hours">9:30 - 15:00</div>
+                </div>
+            </div>     
+        </div>        
+    </section>
+
+    <section class="areaArticles">
+        <div class="container">
+            <section class="sideNotices">
+                <div class="titleArea">
+                    <div class="titleDescription">
+                        Lalest News
+                    </div>
+                    <div class="titleBar"></div>
+                </div>
+                <div class="noticesFullArea flex">
+                    <article class="allInfos">
+                        <a href="#"> 
+                            <div class="dateInfo">
+                                <div class="date">17 JAN 2021</div>
+                                <div class="comments">7</div> 
+                            </div>
+                            <div class="blocoNotice">
+                            <div class="tumbnail">
+                                <img class="imageDoutor" src=assets/images/dr.jpg>
+                            </div>
+                            <div class="nameNotice">
+                                Lorem Ipsum dolor sit amat velum
+                            </div>
+                            <div class="textArea">
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                            </div>
+                            </div>
+                        </a> 
+                     </article>
+
+                    <article class="allInfos">
+                            <a href="#"> 
+                                <div class="dateInfo">
+                                    <div class="date">17 JAN 2021</div>
+                                    <div class="comments">7</div> 
+                                </div>
+                                <div class="blocoNotice">
+                                <div class="tumbnail">
+                                    <img class="imageDoutor" src=assets/images/dr.jpg>
+                                </div>
+                                <div class="nameNotice">
+                                    Lorem Ipsum dolor sit amat velum
+                                </div>
+                                <div class="textArea">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                </div>
+                                </div>
+                            </a> 
+                    </article>
+
+                    <article class="allInfos">
+                        <a href="#"> 
+                            <div class="dateInfo">
+                                <div class="date">17 JAN 2021</div>
+                                <div class="comments">7</div> 
+                            </div>
+                            <div class="blocoNotice">
+                            <div class="tumbnail">
+                                <img class="imageDoutor" src=assets/images/dr.jpg>
+                            </div>
+                            <div class="nameNotice">
+                                Lorem Ipsum dolor sit amat velum
+                            </div>
+                            <div class="textArea">
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                            </div>
+                            </div>
+                        </a> 
+                    </article>
+
+                    <article class="allInfos">
+                        <a href="#"> 
+                            <div class="dateInfo">
+                                <div class="date">17 JAN 2021</div>
+                                <div class="comments">7</div> 
+                            </div>
+                            <div class="blocoNotice">
+                            <div class="tumbnail">
+                                <img class="imageDoutor" src=assets/images/dr.jpg>
+                            </div>
+                            <div class="nameNotice">
+                                Lorem Ipsum dolor sit amat velum
+                            </div>
+                            <div class="textArea">
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                            </div>
+                            </div>
+                        </a>  
+                    </article>
+                    <!--<a class="showAll"href="#">Show all →</a>-->
+                </div>      
+            </section>
+            <aside class="sideDepartments">
+                <div class="titleArea">
+                    <div class="titleDescription">
+                        Departments
+                    </div>
+                    <div class="titleBar"></div>
+                </div>
+                    <div class="areaDepartments">
+                        <a href="#">
+                            <div class="departmentsZone margin">
+                                <div class="departments">
+                                  <!--Conteúdo dos tepartamentos aqui-->
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="departmentsZone">
+                                <div class="departments">
+                                  <!--Conteúdo dos tepartamentos aqui-->
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="departmentsZone margin">
+                                <div class="departments">
+                                 <!--Conteúdo dos tepartamentos aqui-->
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="departmentsZone">
+                                <div class="departments">
+                                  <!--Conteúdo dos tepartamentos aqui-->
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="departmentsZone margin">
+                                <div class="departments">
+                                  <!--Conteúdo dos tepartamentos aqui-->
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="departmentsZone">
+                                <div class="departments">
+                                    <!--Conteúdo dos tepartamentos aqui-->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                <div class="titleArea">
+                    <div class="titleDescription">
+                        Make an Appointments
+                    </div>
+                    <div class="titleBar"></div> 
+                </div>
+                <div class="descriptionAppointments">  
+                    <div class="textAppointments">Lorem ipsum dolor sit amet, consectetur adip amat lorem ipsum dolor, sed diam amat valum</div>
+                    <div class="textAppointments">Lorem ipsum dolor sit amet, consectetur adip amat lorem ipsum dolor, sed diam amat valum</div>
+                    <div class="textAppointments">Lorem ipsum dolor sit amet, consectetur adip amat lorem ipsum dolor, sed diam amat valum</div>
+                </div>
+                <div class="contactArea">
+                    <div class="phone">
+                        📞 By Phone: <strong>77 9999-9999</strong>
+                    </div>
+                    <div class="email">
+                        📩 By Email: <a href="#">clone@template.com</a>
+                    </div>
+                    <div class="page">
+                        💻 Or <a href="#">fill in the form</a> on our contact page
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+    </section>
+    <footer id="rodape">
+            <div class="container flexColumn">
+                <a href="#">
+                    <div class="areaInfos">
+                        <div class="rodapeInfos1">
+                            <h1>Health Insurance</h1>
+                            <h2>Here in Medicenter we have indivdual →</h2>
+                        </div>
+                        <div class="rodapeInfos2">
+                            <h1>Medical Records</h1>
+                            <h2>Here in Medicenter we have indivdual →</h2>
+                        </div>
+                        <div class="rodapeInfos3">
+                            <h1>Online Bill Pay</h1>
+                            <h2>Here in Medicenter we have indivdual →</h2>
+                        </div>
+                    </div>
+                </a>
+                <div class="dadosFooter">
+                    <div class="textsFooter first rodapeBorder">
+                        <div class="titleArea">
+                            <div class="titleDescription">Medicenter Clinic</div>
+                            <div class="titleBar"></div>
+                        </div>
+                        <div class="text">
+                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                        </div>
+                        <div id="divAddres">
+                            <div class="address1">
+                                <p>Medicenter Clinic</p>
+                                <p>33 Farlane Street</p>
+                                <p>Keilor East</p>
+                                <p>VIC 3033, Australia</p>  
+                            </div>
+                            <div class="address2">
+                                </br></br>
+                                <div class="fakeText">FAKE</div>
+                                <div class="phoneAddress">+123 888 999</div>
+                                <div class="phoneAddress">+123 888 999</div>
+                                <div class="addresEmail">clone@template.com</div>
+                            </div>
+                        </div>
+                        <div class="socialMedias">
+                            <a href="https://www.facebook.com/" target="_blank"><img src="assets/images/facebook.png"></a>
+                            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D" target="_blank"><img src="assets/images/twitter.png"></a>
+                            <a href="https://calendar.google.com/" target="_blank"><img src="assets/images/calendar.png"></a>
+                            <a href="#/" target="_blank"><img src="assets/images/email.png"></a>
+                        </div>
+                    </div>
+                    <div class="textsFooter rodapeBorder marginBottom">
+                        <div class="titleArea">
+                            <div class="titleDescription">Lalest Post</div>
+                            <div class="titleBar"></div>
+                        </div>
+                        <div class="postsArea">
+                            <div class="geralPost">
+                                → Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                            </div>
+                            <div class="datePost">6 years ago</div>
+                            <div class="geralPost">
+                                → Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                            </div>
+                            <div class="datePost">6 years ago</div>
+                            <div class="geralPost">
+                                → Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                            </div>
+                            <div class="datePost">6 years ago</div>
+                        </div>
+                    </div>
+                    <div class="textsFooter">
+                        <div class="titleArea">
+                            <div class="titleDescription">Lalest Tweets</div>
+                            <div class="titleBar"></div>
+                        </div>
+                        <div class="twitteArea">
+                            <div class="geraltt">
+                                → It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...<a href="3">Ler mais</a>
+                            </div>
+                            <div class="datett">6 years ago</div>
+                            <div class="geraltt">
+                                → It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...<a href="3">Ler mais</a>
+                            </div>
+                            <div class="datett">6 years ago</div>
+                            <div class="geraltt">
+                                → It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...<a href="3">Ler mais</a>
+                            </div>
+                            <div class="datett">6 years ago</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="direitos">
+                   <div class="copyright">© Copyright - Medicenter template - Clone feito por <a href="https://www.linkedin.com/in/marcelo-ribeiro-da-silva-aa444921b/" target="_blank">Marcelo Silva</a></div> 
+                </div>
+            </div>
+    </footer>
+</body>
+</html>
